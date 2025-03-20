@@ -1,0 +1,67 @@
+#footer-widgets .contact-info-widget i {
+    color: white;
+}
+
+#footer-widgets .widget-title { 
+    border-left-color: white; 
+}
+
+#site-header {
+  background: rgba(255, 255, 255, 1); 
+  height: 80px;
+  z-index: 999;
+  margin: 0 auto;
+  border-bottom: 1px solid #dadada;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+#site-header.hidden {
+  transform: translateY(-100%);
+}
+
+/*undo*/
+#site-header.transparent {
+  background: rgba(255, 255, 255, 0); 
+  border-bottom: none; 
+}
+
+.footer .bs-widget {
+	animation: none;
+}
+
+.menu-button {
+  background-color: #a60000; 
+  border: 1px solid transparent;
+  border-radius: 0px; 
+  -webkit-box-shadow: 1px 1px 0px 0px #2f2f2f;
+  -moz-box-shadow: 1px 1px 0px 0px #2f2f2f;
+  box-shadow: 1px 1px 0px 0px #2f2f2f;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  padding: 2px 6px; 
+  font-size: 10px; 
+  line-height: 1; 
+}
+
+.menu-button:hover {
+  background-color: #8b0000; 
+  -webkit-box-shadow: 4px 4px 5px 0px #2f2f2f;
+  -moz-box-shadow: 4px 4px 5px 0px #2f2f2f;
+  box-shadow: 4px 4px 5px 0px #2f2f2f;
+}
+
+.menu-button a,
+.menu-button a:hover,
+.menu-button a:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+html, body {
+    max-width: 100%!important;
+    overflow-x: hidden!important;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>TITLE</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+
+        <p>
+            <label for="password">Enter a Password: </label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+
+        <p>
+            <label for="color"> Pick a color: </label>
+            <input id="color" type="color" name="color">
+        </p>
+
+        <p>
+            <label for="number">Enter a Number: </label>
+            <input id="number" type="number" placeholder="enter a number" name="number" min="1" max="10">
+        </p>
+
+        <button>submit</button>
+    </form>
+
+    <hr>
+    <h2>Hijacking Demo</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+
+        <!--CHECKED ALREADY-->
+        <input type="checkbox" name="auto_checked" id="checked" checked>
+        <label for="checked">This is checked!</label>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Radio Type</h2>
+    <form action="/clothes">
+        <p>
+            <input type="radio" name="size" id="xs" value="XS">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="m" value="M">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="L" value="L">
+            <label for="l">L</label>
+        </p>
+
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegeterian</option>
+                <option value="steak" selected>steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_label">
+        </p>
+        <button>Submit Size!</button>
+    </form>
+
+    <h2>Text Area</h2>
+    <p>
+        <label for="request">Any Special Requests?</label>
+        <textarea id="request" rows="10" cols="40" name="Request?" placeholder="Type"></textarea>
+    </p>
+    <button>Submit</button>
+
+    <!--VALIDATION DEMO-->
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+
+        <p>
+            <label for="username">Username: </label>
+            <input id="username" type="text" placeholder="username" name="username" minlength="5" maxlength="20">
+        </p>
+
+        <button>Submit Form</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
